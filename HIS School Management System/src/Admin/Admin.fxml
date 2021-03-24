@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1148.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Admin.AdminController">
+   <children>
+      <TabPane prefHeight="720.0" prefWidth="1148.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Students">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <HBox layoutX="321.0" prefHeight="681.0" prefWidth="825.0">
+                           <children>
+                              <TableView fx:id="studenttable" prefHeight="681.0" prefWidth="841.0">
+                                <columns>
+                                  <TableColumn fx:id="idcolumn" prefWidth="49.0" text="ID" />
+                                  <TableColumn fx:id="firstnamecolumn" prefWidth="120.0" text="FIrst Name" />
+                                  <TableColumn fx:id="lastnamecolumn" prefWidth="124.0" text="Last Name" />
+                                  <TableColumn fx:id="emailcolumn" prefWidth="175.0" text="Email" />
+                                  <TableColumn fx:id="dobcolumn" prefWidth="115.0" text="DOB" />
+                                  <TableColumn fx:id="algebracolumn" prefWidth="98.0" text="Algebra" />
+                                    <TableColumn fx:id="calculuscolumn" prefWidth="65.0" text="Calculus" />
+                                    <TableColumn fx:id="databasecolumn" prefWidth="73.0" text="Database" />
+                        									
+                                </columns>
+                              </TableView>
+                           </children>
+                        </HBox>
+                        <VBox layoutX="-1.0" layoutY="218.0" prefHeight="463.0" prefWidth="320.0">
+                           <children>
+                              <Label alignment="CENTER" contentDisplay="TOP" prefHeight="34.0" prefWidth="324.0" text="Enter Student Details">
+                                 <padding>
+                                    <Insets top="10.0" />
+                                 </padding>
+                              </Label>
+                              <TextField fx:id="id" prefHeight="31.0" prefWidth="189.0" promptText="ID" />
+                              <TextField fx:id="firstname" prefHeight="31.0" prefWidth="189.0" promptText="First Name" />
+                              <TextField fx:id="lastname" prefHeight="31.0" prefWidth="189.0" promptText="Last Name" />
+                              <TextField fx:id="email" prefHeight="31.0" prefWidth="189.0" promptText="Email" />
+                              <DatePicker fx:id="dob" prefHeight="31.0" prefWidth="189.0" promptText="Date of Birth" />
+                              <Button mnemonicParsing="false" onAction="#addStudent" prefHeight="31.0" prefWidth="321.0" text="Add Student" />
+                              <Button fx:id="clearFields" mnemonicParsing="false" onAction="#clearFields" prefHeight="31.0" prefWidth="321.0" text="Clear" />
+                              <Button mnemonicParsing="false" onAction="#loadStudentData" prefHeight="31.0" prefWidth="321.0" text="Load Data" />
+                              <VBox prefHeight="366.0" prefWidth="300.0">
+                                 <children>
+                                    <Label alignment="CENTER" contentDisplay="TOP" prefHeight="34.0" prefWidth="324.0" text="Delete student with ID:">
+                                       <padding>
+                                          <Insets top="10.0" />
+                                       </padding>
+                                    </Label>
+                                    <TextField fx:id="deleteID" prefHeight="20.0" prefWidth="300.0" promptText="ID to delete" />
+                                    <Button mnemonicParsing="false" onAction="#deleteID" prefHeight="25.0" prefWidth="347.0" text="Delete student" />
+                                 </children>
+                              </VBox>
+                              <Label />
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

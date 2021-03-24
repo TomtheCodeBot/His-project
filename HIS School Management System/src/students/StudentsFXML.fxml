@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="405.0" prefWidth="773.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="students.StudentsFXMLController">
+   <children>
+      <TabPane prefHeight="405.0" prefWidth="773.0" tabClosingPolicy="UNAVAILABLE">
+         <tabs>
+            <Tab text="Info">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Pane fx:id="studentpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="311.0" prefWidth="715.0">
+                           <children>
+                              <Label alignment="CENTER" layoutX="154.0" layoutY="14.0" prefHeight="66.0" prefWidth="407.0" text="STUDENT SCORE SHEET">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                              </Label>
+                              <Pane layoutY="60.0" prefHeight="234.0" prefWidth="348.0">
+                                 <children>
+                                    <TextField fx:id="firstnamebox" layoutX="161.0" layoutY="61.0" />
+                                    <TextArea layoutX="73.0" layoutY="30.0" maxHeight="25.0" minHeight="25.0" prefHeight="25.0" prefWidth="38.0" text="ID:" />
+                                    <TextField fx:id="idbox" layoutX="161.0" layoutY="30.0" />
+                                    <TextField fx:id="lastnamebox" layoutX="161.0" layoutY="86.0" />
+                                    <TextField fx:id="dobbox" layoutX="161.0" layoutY="123.0" />
+                                    <TextField fx:id="emailbox" layoutX="161.0" layoutY="158.0" />
+                                    <TextArea layoutX="73.0" layoutY="61.0" maxHeight="25.0" minHeight="25.0" prefHeight="25.0" prefWidth="88.0" text="First Name:" />
+                                    <TextArea layoutX="73.0" layoutY="86.0" maxHeight="25.0" minHeight="25.0" prefHeight="25.0" prefWidth="76.0" text="Last Name" />
+                                    <TextArea layoutX="73.0" layoutY="123.0" maxHeight="25.0" minHeight="25.0" prefHeight="25.0" prefWidth="88.0" text="Date of birth:" />
+                                    <TextArea layoutX="73.0" layoutY="158.0" maxHeight="25.0" minHeight="25.0" prefHeight="25.0" prefWidth="53.0" text="E-mail:" />
+                                    <Label layoutX="113.0" layoutY="2.0" prefHeight="25.0" prefWidth="122.0" text="Student Information" />
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="348.0" layoutY="53.0" prefHeight="222.0" prefWidth="326.0">
+                                 <children>
+                                    <TextField fx:id="calculusbox" layoutX="161.0" layoutY="39.0" />
+                                    <TextField fx:id="algebrabox" layoutX="161.0" layoutY="74.0" />
+                                    <TextField fx:id="dbbox" layoutX="161.0" layoutY="111.0" />
+                                    <TextArea layoutX="69.0" layoutY="39.0" maxHeight="25.0" minHeight="25.0" prefHeight="25.0" prefWidth="69.0" text="Calculus:" />
+                                    <TextArea layoutX="69.0" layoutY="74.0" maxHeight="25.0" minHeight="25.0" prefHeight="25.0" prefWidth="61.0" text="Algebra:" />
+                                    <TextArea layoutX="69.0" layoutY="111.0" maxHeight="25.0" minHeight="25.0" prefHeight="25.0" prefWidth="88.0" text="Database:" />
+                                    <Label layoutX="137.0" layoutY="14.0" prefHeight="25.0" prefWidth="53.0" text="Results:" />
+                                 </children>
+                              </Pane>
+                           </children>
+                        </Pane>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Class">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Pane fx:id="studentpane1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="311.0" prefWidth="715.0">
+                           <children>
+                              <Pane layoutX="-56.0" layoutY="70.0" prefHeight="234.0" prefWidth="348.0">
+                                 <children>
+                                    <TextField fx:id="firstnamebox1" layoutX="161.0" layoutY="61.0" />
+                                    <TextArea layoutX="73.0" layoutY="30.0" maxHeight="25.0" minHeight="25.0" prefHeight="25.0" prefWidth="38.0" text="ID:" />
+                                    <TextField fx:id="idbox1" layoutX="161.0" layoutY="30.0" />
+                                    <TextField fx:id="lastnamebox1" layoutX="161.0" layoutY="86.0" />
+                                    <TextField fx:id="dobbox1" layoutX="161.0" layoutY="123.0" />
+                                    <TextField fx:id="emailbox1" layoutX="161.0" layoutY="158.0" />
+                                    <TextArea layoutX="73.0" layoutY="61.0" maxHeight="25.0" minHeight="25.0" prefHeight="25.0" prefWidth="88.0" text="First Name:" />
+                                    <TextArea layoutX="73.0" layoutY="86.0" maxHeight="25.0" minHeight="25.0" prefHeight="25.0" prefWidth="76.0" text="Last Name" />
+                                    <TextArea layoutX="73.0" layoutY="123.0" maxHeight="25.0" minHeight="25.0" prefHeight="25.0" prefWidth="88.0" text="Date of birth:" />
+                                    <TextArea layoutX="73.0" layoutY="158.0" maxHeight="25.0" minHeight="25.0" prefHeight="25.0" prefWidth="53.0" text="E-mail:" />
+                                    <Label layoutX="113.0" layoutY="2.0" prefHeight="25.0" prefWidth="122.0" text="Student Information" />
+                                    <Button layoutX="235.0" layoutY="208.0" mnemonicParsing="false" onAction="#loadSchedule" text="Show" />
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="348.0" layoutY="53.0" prefHeight="222.0" prefWidth="326.0">
+                                 <children>
+                                    <TableView fx:id="teacherTable" layoutX="-42.0" layoutY="-57.0" prefHeight="378.0" prefWidth="469.0">
+                                      <columns>
+                                        <TableColumn fx:id="fname" prefWidth="137.60003662109375" text="Teacher's first name" />
+                                        <TableColumn fx:id="lname" minWidth="8.0" prefWidth="128.79998779296875" text="Teacher's last name" />
+                                          <TableColumn fx:id="emailcolumn" minWidth="0.0" prefWidth="117.60003662109375" text="Email" />
+                                          <TableColumn fx:id="subject" prefWidth="81.0" text="Subject" />
+                                      </columns>
+                                    </TableView>
+                                 </children>
+                              </Pane>
+                           </children>
+                        </Pane>
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Schedule">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="stuscheduletable" layoutX="25.0" layoutY="-23.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="80.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                          <columns>
+                            <TableColumn fx:id="stufname" prefWidth="92.0" text="stuFName" />
+                            <TableColumn fx:id="teacherfname" prefWidth="120.0" text="teacherFName" />
+                              <TableColumn fx:id="teacheremail" prefWidth="150.0" text="teacherEmail" />
+                              <TableColumn fx:id="subject1" prefWidth="100.0" text="subject" />
+                              <TableColumn fx:id="teachingdate" prefWidth="140.0" text="teachingDate" />
+                              <TableColumn fx:id="start" prefWidth="89.0" text="start" />
+                              <TableColumn fx:id="end" prefWidth="81.0" text="end" />
+                          </columns>
+                        </TableView>
+                        <Button layoutX="551.0" layoutY="308.0" mnemonicParsing="false" onAction="#loadStudentSchedule" text="Show schedule" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+         </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
